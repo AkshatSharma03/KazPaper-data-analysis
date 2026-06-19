@@ -1,0 +1,92 @@
+=== PANEL (corrected, new data) ===
+ year  exports_bn  imports_bn  total_trade_bn  trade_balance  balance_ratio  kaz_world_exports_bn  kaz_world_imports_bn  chn_exp_share_pct  chn_imp_share_pct  t  post2020
+ 2015       5.480       5.088          10.568          0.392          0.037                45.946                30.528             11.927             16.666  0         0
+ 2016       4.215       3.663           7.877          0.552          0.070                36.757                25.143             11.467             14.567  1         0
+ 2017       5.798       4.695          10.493          1.103          0.105                48.484                29.549             11.959             15.889  2         0
+ 2018       6.307       5.384          11.692          0.923          0.079                61.108                33.347             10.322             16.146  3         0
+ 2019       8.004       6.789          14.792          1.215          0.082                58.065                39.698             13.784             17.101  4         0
+ 2020       6.837       1.955           8.792          4.881          0.555                41.873                22.097             16.327              8.849  5         1
+ 2021       6.852       2.424           9.276          4.428          0.477                53.067                27.732             12.912              8.741  6         1
+ 2022      10.462       3.575          14.037          6.887          0.491                76.138                30.940             13.741             11.554  7         1
+ 2023      14.759      16.772          31.530         -2.013         -0.064                78.723                61.034             18.748             27.479  8         1
+ 2024      14.897      15.153          30.051         -0.256         -0.009                81.606                59.732             18.255             25.369  9         1
+
+=== TII ===
+ year  kaz_exp_share_to_chn_pct  chn_world_import_share_pct   tii
+ 2015                    11.927                       9.846 1.211
+ 2016                    11.467                       9.550 1.201
+ 2017                    11.959                       9.986 1.197
+ 2018                    10.322                      10.557 0.978
+ 2019                    13.784                      10.647 1.295
+ 2020                    16.327                      11.449 1.426
+ 2021                    12.912                      11.839 1.091
+ 2022                    13.741                      10.849 1.267
+ 2023                    18.748                      10.906 1.719
+ 2024                    18.255                      11.285 1.618
+
+=== RCA (world reference = world imports by sector) ===
+                      rca_2015  rca_2024
+sector                                  
+Metals_Minerals          1.423     1.679
+Chemicals                0.744     0.755
+Agriculture              0.531     0.674
+Textiles                 0.056     0.139
+Machinery_Electrical     0.029     0.135
+Plastics_Rubber          0.045     0.189
+Energy                   5.787     4.219
+Vehicles                 0.016     0.056
+Wood_Paper               0.020     0.126
+
+=== CONCENTRATION / HHI (bilateral, HS4) ===
+ year  exp_top5_pct  exp_top10_pct  exp_hhi  imp_top5_pct  imp_top10_pct  imp_hhi
+ 2015        87.224         95.413    0.220        19.220         27.982    0.015
+ 2016        82.034         92.456    0.151        18.844         26.924    0.015
+ 2017        82.299         93.293    0.141        21.188         29.567    0.018
+ 2018        77.280         93.932    0.138        23.174         30.970    0.022
+ 2019        72.544         90.654    0.126        23.377         32.771    0.018
+ 2020        78.888         92.545    0.138        22.925         34.656    0.020
+ 2021        83.569         95.305    0.168        30.212         40.946    0.035
+ 2022        84.445         93.792    0.217        20.191         32.570    0.017
+ 2023        75.911         88.839    0.140        20.553         29.281    0.015
+ 2024        70.861         87.416    0.116        21.427         30.294    0.015
+world-export HHI 2024 = 0.286; world-import HHI 2024 = 0.008
+
+=== EXPORT-SIDE partner values (bn) and comparison-set shares (%) ===
+      exp_china_bn  exp_russia_bn  exp_eu_uk_bn  china_setshare_pct  russia_setshare_pct  eu_uk_setshare_pct
+Year                                                                                                        
+2015          5.48           4.55         23.10               16.54                13.72               69.73
+2016          4.21           3.51         17.76               16.54                13.77               69.69
+2017          5.80           4.64         23.35               17.16                13.73               69.11
+2018          6.31           5.28         29.53               15.34                12.84               71.82
+2019          8.00           5.67         23.10               21.76                15.42               62.82
+2020          6.84           5.01         16.32               24.28                17.78               57.95
+2021          6.85           7.02         21.86               19.18                19.64               61.18
+2022         10.46           8.78         30.19               21.16                17.76               61.08
+2023         14.76           9.78         29.00               27.56                18.27               54.17
+2024         14.90           9.55         35.77               24.74                15.85               59.41
+
+=== Russia vs China KAZ EXPORT sectoral shares 2024 (%) ===
+  China: Metals_Minerals 55.1; Energy 22.0; Chemicals 12.8; Agriculture 6.6
+  Russia: Metals_Minerals 30.1; Chemicals 27.9; Machinery_Electrical 17.1; Agriculture 5.7
+  KAZ 2024 export lines >=US$1m to China: 65
+  KAZ 2024 export lines >=US$1m to Russia: 411
+
+=== REGRESSION (corrected trade balance) ===
+M1 trend +0.117 (se 0.298, p 0.705), R2 0.017
+M2 trend -0.735 (se 0.433); post2020 +5.623 (se 2.044, p 0.028); adjR2 0.109
+ADF trade_balance: stat -1.546 p 0.511
+ADF balance_ratio: stat -1.652 p 0.456
+ADF total: stat -1.119 p 0.707
+
+=== China import penetration (share of KAZ world imports, %) ===
+ year  chn_imp_share_pct
+ 2015               16.7
+ 2016               14.6
+ 2017               15.9
+ 2018               16.1
+ 2019               17.1
+ 2020                8.8
+ 2021                8.7
+ 2022               11.6
+ 2023               27.5
+ 2024               25.4
