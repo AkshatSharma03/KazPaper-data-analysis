@@ -42,9 +42,10 @@ plt.rcParams.update({
     "savefig.dpi": 300,
     "savefig.bbox": "tight",
 })
-NAVY = "#1f3b5c"
-RED = "#9e2b25"
-GRAY = "#7a7a7a"
+# Grayscale palette: figures must remain legible in black-and-white printing.
+NAVY = "#303030"
+RED = "#6f6f6f"
+GRAY = "#9a9a9a"
 COVID = (2020, 2022)
 
 
@@ -120,8 +121,8 @@ def composition(flow_col, keep, fname, ylabel):
     other = share.drop(columns=[c for c in keep if c in share.columns]).sum(axis=1)
     plot = share[[c for c in keep if c in share.columns]].copy()
     plot["Other"] = other
-    palette = ["#1f3b5c", "#9e2b25", "#3c7a5a", "#c8902a", "#6a5acd",
-               "#8a8a8a", "#4f9da6", "#b5651d"]
+    palette = ["#303030", "#555555", "#777777", "#999999", "#bbbbbb",
+               "#d0d0d0", "#e0e0e0", "#eeeeee"]
     fig, ax = plt.subplots(figsize=(7, 4.2))
     ax.stackplot(plot.index, plot.T.values,
                  labels=[c.replace("_", "/") for c in plot.columns],
